@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive prototype 1</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    
+  </head>
+
+  <body id="app">
+    <TabBar />
+    <div class="wrapper">
+      <div class="notification success">
+        <span class="title">: )&nbsp;&nbsp;&nbsp;&nbsp;Notification</span>
+        <span id="report1"></span> <span class="closer">X</span>
+      </div>
+      <nav class="nav-bar nav">
+        <div id="nav-toggle" class="nav-home nav-toggle">
+          <i class="material-icons">menu</i>
+          O11y
+        </div>
+
+        <div class="nav-actions">
+          <i class="material-icons">search</i>
+          <i class="material-icons">schedule</i>
+          <i class="material-icons">notifications_none</i>
+        </div>
+      </nav>
+
+      <header class="context-header">
+        <div class="context-bar">
+          <div class="fltr">
+            <i class="material-icons">pause</i>
+            Last 30 mins
+            <i class="material-icons">arrow_drop_down</i>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div href="#">Last 1hr</div>
+                <div href="#">Last 1d</div>
+                <div href="#">Last 1w</div>
+              </div>
+            </div>
+          </div>
+          <!--a class="fltr">
+            <span class="key">Color by:</span> health
+            <i class="material-icons">arrow_drop_down</i>
+          </a>
+          <a class="fltr">
+            <span class="key">Group by:</span> accountId
+            <i class="material-icons">arrow_drop_down</i>
+          </a>
+          <a class="fltr">
+            <span class="key">key:</span> value
+            <i class="material-icons">arrow_drop_down</i>
+          </a-->
+
+          <a class="add material-icons">
+            add
+          </a>
+          <div class="more">
+            <i class="material-icons">more_vert</i>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div href="#">one</div>
+                <div href="#">two</div>
+                <div href="#">three</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="breadcrumb" class="breadcrumb">
+          <div class="crumb"><i class="material-icons">home</i></div>
+          <div class="separator"></div>
+          <div class="crumb"></div>
+          <div class="separator"></div>
+        </div>
+      </header>
+      <dataspace>
+        <aside id="aside" class="box c">
+          <div class="box c0"><h2>Aside</h2></div>
+          <div class="box c1">
+            C1
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box c2">
+            C2
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box c3">
+            C3
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box c4">
+            C4
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box c5">C5</div>
+        </aside>
+        <divider></divider>
+        <main id="main" class="box d">
+          <div class="box e">E</div>
+          <div class="box f">
+            <div id="accordion"></div>
+          </div>
+          <div class="box g">
+            G
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box h">
+            H
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box i">
+            I
+            <div id="monogram"></div>
+          </div>
+          <div class="box j">
+            J
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box k">
+            K
+            <dl>
+              <dt class="dt-title"></dt>
+              <dd class="dt-desc"></dd>
+            </dl>
+          </div>
+          <div class="box l">L</div>
+        </main>
+      </dataspace>
+
+      
+
+      <footer class="workspace-nav">
+        <div class="workspace-preview hidden">
+          <div class="workspace-preview-toolbar">
+            <span>-31s</span>
+            <span>tag</span>
+            <span>tag</span>
+            <span>tag</span>
+          </div>
+          <div class="workspace-preview-content">
+            <h1 class="preview-title">Preview Area</h1>
+          </div>
+        </div>
+
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i>
+          <span>Related Content of some kind or other</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+      </footer>
+    </div>
+
+    <side-nav class="side-nav">
+      <div class="header">
+        <i class="material-icons">home</i><span>Observability</span
+        ><i class="material-icons end close">close</i>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Home</span>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Services</span
+        ><i class="material-icons">chevron_right</i>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Infrastructure</span>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Log Explorer</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Alerts</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Integrations</span
+        ><i class="material-icons end">chevron_right</i>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Timeline</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Dashboards</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Settings</span
+        ><i class="material-icons">chevron_right</i>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Help</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>User Name</span
+        ><i class="material-icons">chevron_right</i>
+      </div>
+    </side-nav>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
